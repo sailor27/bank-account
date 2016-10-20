@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>The Bank</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="jumbotron">
+      <h1>Your Bank Account</h1>
+      <h3>Start a new bank account, or deposit and withdraw from an exisiting account.</h3>
+      </div>
+
+      <form id="create">
+        <div class="form-group">
+         <label for="name">Your Name</label>
+         <input type="text" class="form-control" id = "name">
+       </div>
+
+       <div class="form-group">
+        <label for="firstdeposit">Initial Deposit</label>
+        <input type="text" class="form-control" id = "firstdeposit">
+       </div>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+
+      <form id="modify">
+        <div class="form-group">
+         <label for="deposit">Amount to deposit:</label>
+         <input type="text" class="form-control" id = "deposit">
+       </div>
+
+       <div class="form-group">
+        <label for="withdrawal">Amount to withdraw:</label>
+        <input type="text" class="form-control" id = "withdrawal">
+       </div>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+
+      <div id ="details">
+        <h2> Your new account has a balance of: $<span id="newBalance"></span></h2>
+      </div>
+
+
+    </div>
+  </body>
+</html>
