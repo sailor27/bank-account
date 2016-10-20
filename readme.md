@@ -2,10 +2,8 @@
 
 * User inputs name & amount to create new account
   * Example Input: The Count, 50.00
-  * Example Output: function BankAccount(name, balance) {
-    this.name = name;
-    this.balance = balance;
-  }
+  * Example Output: newAccount.name = "the Count"
+                    newAccount.balance  =  "50.00"
 
 * App shows account balance
   * Example Input: User clicks on "Show me my balance"

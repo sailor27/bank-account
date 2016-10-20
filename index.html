@@ -28,11 +28,16 @@
         <button type="submit" class="btn-primary">Submit</button>
       </form>
 
+      <!-- <div id ="details">
+        <h2> Your new account has a balance of: $<span id= "firstBalance"></span></h2>
+      </div> -->
+
       <form id="modify">
         <div class="form-group">
          <label for="deposit">Amount to deposit:</label>
          <input type="text" class="form-control" id = "deposit">
        </div>
+       <button type="submit" class="btn-primary">Submit</button>
 
        <div class="form-group">
         <label for="withdrawal">Amount to withdraw:</label>
@@ -42,8 +47,12 @@
       </form>
 
       <div id ="details">
-        <h2> Your new account has a balance of: $<span id="newBalance"></span></h2>
+        <h2> You deposited: $<span id="depositAmt"></span></h2>
+        <h2> You withdrew: $<span id="withdrawalAmt"></span></h2>
+        <h2> Your account has a balance of: $<span id="newBalance"></span></h2>
       </div>
+
+
 
 
     </div>
