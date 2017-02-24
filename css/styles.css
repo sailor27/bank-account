@@ -55,16 +55,12 @@ body {
   font-size: 4vh;
 }
 
-[role='heading'] h1,
-[role='heading'] h2 {
+section  h1, h2 {
   margin: 0;
   line-height: 1.2;
-}
-
-
-[role='heading'] h2 {
   font-size: 5vh;
 }
+
 
 [role='heading'] h4 {
   font-size: 2vh;
@@ -86,6 +82,10 @@ nav a {
 
 nav a:hover{
   background-color: #5bc0de;
+}
+/* figure out how to not use id for show/hiding using js?*/
+#personalinfo {
+  display: none;
 }
 
 fieldset {
@@ -122,13 +122,17 @@ button {
 }
 
 [type='submit'] {
-  background: #5cb85c;
+  background: #5bc0de;
   color: #fff;
   border-color: #419641;
 }
 
 [type='reset'] {
-  background: #d9534f;
-  color: #fff;
-  border-color: #c12e2a;
+  background: #DBD984;
+  color: #3F1234;
+  border-color: #5bc0de;
+}
+
+.thespot {
+  background-color: #fff;
 }

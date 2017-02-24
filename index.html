@@ -19,26 +19,28 @@
 
     <nav role="navigation">
       <ul>
-        <li class="active nav"><a href="index.html"> Home </a></li>
+        <li class="active nav"><a href="index.html"> Account Info </a></li>
         <li><a href="personalinfo.html">Personal Info </a></li>
         <li><a href="identity.html"> Identity </a></li>
         <li><a href="review.html"> Review & Submit </a></li>
       </ul>
     </nav>
 
-    <header role="heading">
-      <h2>Welcome to Plain Bank!</h2>
-      <h4>We’re so glad you’re ready to join. This should only take a couple minutes. Let’s start by creating your account login.</h4>
-    </header>
+    <section>
+      <header>
+        <h2>Welcome to Plain Bank!</h2>
+        <h4>We’re so glad you’re ready to join. This should only take a couple minutes. Let’s start by creating your account login.</h4>
+      </header>
+    </section>
 
-    <form>
+    <form id="accountinfo">
       <fieldset>
-        <legend>Account Information</legend>
+        <legend>Account info</legend>
         <label for ='username'>
           Username
         <input
           id="username"
-          type ='email'
+          type ='text'
           placeholder="janeplain"
         />
       </label>
@@ -62,12 +64,18 @@
         </label>
       </fieldset>
 
+      <button type='reset'>Reset the form</button>
+      <button type='submit'>Submit</button>
+    </form>
+
+    <form id= "personalinfo">
       <fieldset>
         <legend>Personal Info</legend>
 
         <label for='first-name'>
           Legal first name
         <input
+        id = 'firstname'
         type='text'
         name='first-name'
         placeholder='e.g Jordan'
@@ -77,6 +85,7 @@
         <label for='last-name'>
           Legal last name
         <input
+        id = "lastname"
         type='text'
         name='last-name'
         placeholder='e.g. Doe'
@@ -86,6 +95,7 @@
         <label for='address-line1'>
           Address (Line 1)
         <input
+        id = "address1"
         type='text'
         name='address-line1'
         placeholder='e.g. Street Address, Company Name, C/O'
@@ -95,6 +105,7 @@
         <label for='address-line2'>
           Address (Line 2)</label>
         <input
+        id = "address2"
         type='text'
         name='address-line2'
         placeholder='e.g. Apartment, Suite, Unit, etc.'
@@ -103,6 +114,7 @@
         <label for='city'>
           City
         <input
+        id ="city"
         type='text'
         name='city'
         placeholder="e.g. Portland"
@@ -112,6 +124,7 @@
         <label for='state'>
           State/Province/Region
         <input
+        id = "state"
         type='text'
         name='state'
         placeholder= 'e.g. Oregon'
@@ -121,6 +134,7 @@
         <label for='zip-code'>
           Zip/Postal Code
         <input
+        id = "zip"
         type='text'
         name='zip-code'
         placeholder="97214"
@@ -129,7 +143,7 @@
 
         <label for='country'>
           Country
-        <select name='country'>
+        <select name='country' id ="country">
           <optgroup label='North America'>
             <option value='USA'>USA</option>
             <option value='Canada'>Canada</option>
@@ -142,13 +156,18 @@
           </optgroup>
         </select>
         </label>
-
       </fieldset>
 
       <button type='reset'>Reset the form</button>
       <button type='submit'>Submit</button>
 
     </form>
+
+    <section class= "thespot" id= "thespot">
+      <p></p>
+    </section>
+
+
     <!-- <div class="container">
 
       <div class="jumbotron">

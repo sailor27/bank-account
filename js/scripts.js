@@ -1,44 +1,26 @@
-function BankAccount(name, balance) {
-  this.name = name;
-  this.balance = balance;
-}
 
-BankAccount.prototype.increaseBalance = function(deposit) {
-  this.balance +=  deposit ;
-}
-
-BankAccount.prototype.decreaseBalance = function(withdrawal) {
-  this.balance -= withdrawal ;
-}
-
-
-
-//front end
 $(document).ready(function() {
 
-//function to create original account with starting balance
-  $("form#create").submit(function(event) {
+  $("form#accountinfo").submit(function(event) {
     event.preventDefault();
-    var inputName = $("#name").val();
-    var firstBalance = parseInt($("#firstdeposit").val());
-    var newAccount = new BankAccount (inputName, firstBalance);
-   $("#newBalance").text(newAccount.balance);
+    var userName = $("#username").val();
+    var email = $("#email").val();
+    var passphrase = $("#passphrase").val();
+   $("form#accountinfo").hide();
+   $("form#personalinfo").show();
 
-//function to deposit to increase the account balance
-    $("form#modify").submit(function(event) {
+    $("form#personalinfo").submit(function(event) {
       event.preventDefault();
-      var deposit = parseInt($("#deposit").val());
-      var withdrawal = parseInt($("#withdrawal").val());
+      var firstname = $("#firstname").val();
+      var lastname = $("#lastname").val();
+      var address1 = $("#address1").val();
+      var address2 = $("#address2").val();
+      var city = $("#city").val();
+      var state = $("#state").val();
+      var zip = $("#zip").val();
+      var country = $("#country").val();
+    $("#thespot").text(firstname);
 
-      if (isNaN(withdrawal)) {
-        $("#depositAmt").text(deposit);
-        newAccount.increaseBalance (deposit);
-        $("#newBalance").text(newAccount.balance);
-
-      } else {$("#withdrawalAmt").text(withdrawal);
-      newAccount.decreaseBalance(withdrawal);
-      $("#newBalance").text(newAccount.balance);
-      }
 
     });
   });
