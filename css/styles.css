@@ -13,7 +13,8 @@ html {
 }
 
 body {
-  background: #fff;
+  background-color: #DBD984;
+  color: #3F1234;
   width: 80vw;
   /* margin: top right bottom left */
   /* margin: top/bottom left/right; */
@@ -38,6 +39,7 @@ body {
 [role='banner'] h2 {
   margin: 0;
   line-height: 1.2;
+  padding-bottom: .25rem;
 }
 
 [role='banner'] h1 {
@@ -45,8 +47,12 @@ body {
   font-family: 'Monoton', sans-serif;
 }
 
+[role='banner'] h1:hover {
+  color: #7B244F;
+}
+
 [role='banner'] h2 {
-  font-size: 5vh;
+  font-size: 4vh;
 }
 
 [role='heading'] h1,
@@ -75,7 +81,11 @@ nav li{
 
 nav a {
   padding: .5rem .25rem;
-  background-color: #ddd;
+  color: #3F1234;
+}
+
+nav a:hover{
+  background-color: #5bc0de;
 }
 
 fieldset {
