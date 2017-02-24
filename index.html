@@ -3,12 +3,153 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>The Bank</title>
+    <meta charset='utf-8'>
+    <title>welcome to Plain Bank</title>
   </head>
   <body>
-    <div class="container">
+
+    <header role="banner">
+      <h1>PLAIN BANK</h1>
+      <h2>a *simple* banking experience</h2>
+
+    </header>
+
+    <nav role="navigation">
+      <ul>
+        <li class="active nav"><a href="index.html"> Home </a></li>
+        <li><a href="personalinfo.html">Personal Info </a></li>
+        <li><a href="identity.html"> Identity </a></li>
+        <li><a href="review.html"> Review & Submit </a></li>
+      </ul>
+    </nav>
+
+    <header role="heading">
+      <h2>Welcome to Plain Bank!</h2>
+      <h4>We’re so glad you’re ready to join. This should only take a couple minutes. Let’s start by creating your account login</h4>
+    </header>
+
+    <form>
+      <fieldset>
+        <legend>Account Information</legend>
+        <label for ='username'>
+          Username
+        <input
+          id="username"
+          type ='email'
+          placeholder="janeplain"
+        />
+        </label>
+
+        <label for='email'>
+          Email address
+        <input
+           id = "email"
+           type ='email'
+           placeholder="emailhaver@gmail.com"
+         />
+         </label>
+
+        <label for='passphrase'>
+          Passphrase
+        <input
+          id= "passphrase"
+          type='password'
+          placeholder='e.g. pillow jar symbol lift'
+        />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for='first-name'>
+          Legal first name
+        <input
+        type='text'
+        name='first-name'
+        placeholder='e.g Jordan'
+        />
+        </label>
+
+        <label for='last-name'>
+          Legal last name
+        <input
+        type='text'
+        name='last-name'
+        placeholder='e.g. Doe'
+        />
+        </label>
+
+        <label for='address-line1'>
+          Address (Line 1)
+        <input
+        type='text'
+        name='address-line1'
+        placeholder='e.g. Street Address, Company Name, C/O'
+        />
+
+        </label>
+        <label for='address-line2'>
+          Address (Line 2)</label>
+        <input
+        type='text'
+        name='address-line2'
+        placeholder='e.g. Apartment, Suite, Unit, etc.'
+        />
+
+        <label for='city'>
+          City
+        <input
+        type='text'
+        name='city'
+        placeholder="e.g. Portland"
+        />
+        </label>
+
+        <label for='state'>
+          State/Province/Region
+        <input
+        type='text'
+        name='state'
+        placeholder= 'e.g. Oregon'
+        />
+        </label>
+
+        <label for='zip-code'>
+          Zip/Postal Code
+        <input
+        type='text'
+        name='zip-code'
+        placeholder="97214"
+        />
+        </label>
+
+        <label for='country'>
+          Country
+        <select name='country'>
+          <optgroup label='North America'>
+            <option value='USA'>USA</option>
+            <option value='Canada'>Canada</option>
+          </optgroup>
+
+          <optgroup label='Europe'>
+            <option value='UK'>UK</option>
+            <option value='Germany'>Germany</option>
+            <option value='France'>France</option>
+          </optgroup>
+        </select>
+        </label>
+
+      </fieldset>
+
+      <button type='reset'>Reset the form</button>
+      <button type='submit'>Submit</button>
+
+    </form>
+    <!-- <div class="container">
 
       <div class="jumbotron">
       <h1>Your Bank Account</h1>
@@ -28,9 +169,7 @@
         <button type="submit" class="btn-primary">Submit</button>
       </form>
 
-      <!-- <div id ="details">
-        <h2> Your new account has a balance of: $<span id= "firstBalance"></span></h2>
-      </div> -->
+
 
       <form id="modify">
         <div class="form-group">
@@ -55,6 +194,6 @@
 
 
 
-    </div>
+    </div> -->
   </body>
 </html>
