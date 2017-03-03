@@ -19,7 +19,15 @@ $(document).ready(function() {
       var state = $("#state").val();
       var zip = $("#zip").val();
       var country = $("#country").val();
-    $("#thespot").text(firstname);
+    $("form#personalinfo").hide();
+    $("form#identity").show();
+
+      $("form#identity").submit(function(event) {
+        event.preventDefault();
+        var birthdate = $("#birthdate").val();
+        var social = $("#social").val();
+      $("form#identity").hide();
+      });
 
 
     });

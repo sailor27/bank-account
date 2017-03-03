@@ -84,8 +84,12 @@ nav a {
 nav a:hover{
   background-color: #5bc0de;
 }
-/* figure out how to not use id for show/hiding using js?*/
+
 #personalinfo {
+  display: none;
+}
+
+#identity {
   display: none;
 }
 
